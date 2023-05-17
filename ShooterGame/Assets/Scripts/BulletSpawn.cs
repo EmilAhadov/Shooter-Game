@@ -24,6 +24,7 @@ public class BulletSpawn : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.DrawRay(transform.position, transform.forward * 1f, Color.red);
             if(bullet >= 0 && Physics.Raycast(transform.position, transform.forward, out target, 500,layer) )
             {
                     Instantiate(Bullet, transform.position + transform.forward * 1f, transform.rotation);

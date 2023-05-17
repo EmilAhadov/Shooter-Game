@@ -9,7 +9,7 @@ public class PlayerFight : MonoBehaviour
 
     private void Start()
     {
-        health = 300000000;
+        health = 30;
         money = 0;
     }
     void Update()
